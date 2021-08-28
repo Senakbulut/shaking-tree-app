@@ -1,0 +1,30 @@
+.containerBasket
+    position: absolute
+    left: 50%
+    top: 68%
+
+.basketImg
+    width: 45%
+    opacity: 0.7
+
+$applebasket: 1,2,3
+
+@each $apple in $applebasket
+    .basketapple#{$apple}
+        width: 6%
+        position: absolute
+        top: 25%
+        left: 5 + ($apple*5) + %
+        visibility: hidden
+        
+.vBasketapple
+    animation: visible 3s
+    animation-fill-mode: forwards 
+
+@keyframes visible
+    0%
+        visibility: hidden
+    100%
+        visibility: visible
+        
+        

@@ -1,0 +1,60 @@
+.containerBasket {
+  position: absolute;
+  left: 50%;
+  top: 68%;
+}
+
+.basketImg {
+  width: 45%;
+  opacity: 0.7;
+}
+
+.basketapple1 {
+  width: 6%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  visibility: hidden;
+}
+
+.basketapple2 {
+  width: 6%;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  visibility: hidden;
+}
+
+.basketapple3 {
+  width: 6%;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  visibility: hidden;
+}
+
+.vBasketapple {
+  -webkit-animation: visible 3s;
+          animation: visible 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes visible {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes visible {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+/*# sourceMappingURL=Basket.css.map */

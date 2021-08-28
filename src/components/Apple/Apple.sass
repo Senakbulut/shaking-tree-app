@@ -1,0 +1,61 @@
+.AppleCommon
+    width: 3%
+    position: absolute
+
+$applePositionsH: 1,2
+$applePositionsV: 4,5,6,7
+@each $positionH in $applePositionsH
+    .appleImg#{$positionH}
+        width: 3%
+        position: absolute
+        left: 10 + (8*$positionH) + %
+        top: 15+ (3*$positionH) + %
+
+@each $positionV in $applePositionsV
+
+    .appleImg#{$positionV}
+        @extend .AppleCommon
+        left: (2*$positionV) + %
+        margin-left:(3*$positionV) + %
+        top:  35%
+
+.containerApple
+    margin: 5%
+    
+.appleImg3
+    @extend .AppleCommon
+    top: 29%
+    left: 13%
+    
+.appleImg5, .appleImg7
+    top: 28%
+
+$falling: 1,2,3
+
+@each $fall in $falling
+    .fallAppl#{$fall}
+        animation: fall $fall + s linear
+        animation-fill-mode: forwards
+    
+.shakeAppl
+    animation: shakeApple 2s infinite
+
+    
+@keyframes fall  
+    0%
+        transform: translateY(0%)
+        opacity: 1
+    80%
+        transform: translateY(1000%)
+        opacity: 1
+    90%
+        transform: translateY(970%)
+        opacity: 1
+    100%
+        transform: translateY(1000%)
+        opacity: 0
+
+
+  
+
+
