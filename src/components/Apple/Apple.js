@@ -20,7 +20,7 @@ function Apple(props) {
     return (
         <div>
            <Tree fall ={fallApples}/>
-           <!-- It is stated that if the variable that provides control with useState is true, the class defined in the sass file should be added.-->
+           /*It is stated that if the variable that provides control with useState is true, the class defined in the sass file should be added.*/
             <div className="containerApple">
                     <img src="../../../public/images/apple.png" alt="" className={`appleImg1 `}/>
                     <img src="../../../public/images/apple.png" alt="" className={`appleImg2 `} />
