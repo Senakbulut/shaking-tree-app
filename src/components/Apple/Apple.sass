@@ -9,17 +9,16 @@ $applePositionsV: 4,5,6,7
 @each $positionH in $applePositionsH
     .appleImg#{$positionH}
         @extend .AppleCommon 
-        left: 10 + (8*$positionH) + % // Each can be given different positions with 'each'
+        left: 10 + (8*$positionH) + %
         top: 15+ (3*$positionH) + %
-
+// Each can be given different positions with 'each'
 @each $positionV in $applePositionsV
-
     .appleImg#{$positionV}
-        @extend .AppleCommon//Common properties with extend are used without repetition
+        @extend .AppleCommon
         left: (2*$positionV) + %
         margin-left:(3*$positionV) + %
         top:  35%
-
+//Common properties with extend are used without repetition
 .containerApple
     margin: 5%
     
