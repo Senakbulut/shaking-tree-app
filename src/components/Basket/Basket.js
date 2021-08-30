@@ -13,10 +13,10 @@ function Basket() {
         <div>
             <Apple visible={visibleApple}/>
             <div className="containerBasket">
-                <img src="../../../public/images/basket.svg" alt="" className="basketImg" />
-                <img src="../../../public/images/apple.svg" alt=""  className={`basketapple1 ${basketApple ? 'vBasketapple' : null }`}/>
-                <img src="../../../public/images/apple.svg" alt="" className={`basketapple2 ${basketApple ? 'vBasketapple' : null }`} />
-                <img src="../../../public/images/apple.svg" alt="" className={`basketapple3 ${basketApple ? 'vBasketapple' : null }`} />
+                <img src="../../../public/images/basket.png" alt="" className="basketImg" />
+                <img src="../../../public/images/apple.png" alt=""  className={`basketapple1 ${basketApple ? 'vBasketapple' : null }`}/>
+                <img src="../../../public/images/apple.png" alt="" className={`basketapple2 ${basketApple ? 'vBasketapple' : null }`} />
+                <img src="../../../public/images/apple.png" alt="" className={`basketapple3 ${basketApple ? 'vBasketapple' : null }`} />
             </div>
         </div>
     )
