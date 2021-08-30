@@ -15,10 +15,10 @@ function Tree(props) {
     return (
         <div>
             <div className="containerTree">
-                    <img src="../../../public/images/tree.png" alt="" className={`treeImg ${shaking ? 'shake' : null }`}  />
+                    <img sr{c="../../../public/images/tree.png" alt="" className={`treeImg ${shaking ? 'shake' : null }`}  />
             </div>
               <ShakeButton shake ={ShakeTree}/>
-              /*prepared function sent to button*/
+              {/*prepared function sent to button*/}
         </div>
     )
 }
