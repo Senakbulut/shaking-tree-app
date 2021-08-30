@@ -1,3 +1,4 @@
 {
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
-}
+    "presets": ["@babel/preset-env", "@babel/preset-react"] 
+}//@babel/preset-env: It is a preset that allows you to use the latest JavaScript without the need for micromanaging which syntax transformations the target environment requires. Minifies javascript packages.
+//@babel/preset-react: Allows to recognize React jsx structure.
