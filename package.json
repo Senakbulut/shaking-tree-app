@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "serve": "webpack serve --mode development",
-    "build": "webpack --mode production"
+  "scripts": { // The "scripts" property is a dictionary containing script commands that are run at various times in the lifecycle of your package. 
+    "serve": "webpack serve --mode development", // Using webpack dev server, the project is run with npm run serve. With the development mode, the reload time is shortened.
+    "build": "webpack --mode production" // 'production' some libraries may add additional logging and testing to make debugging easier. 
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
-  "devDependencies": {
+  "devDependencies": { //Required Dependencies
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
