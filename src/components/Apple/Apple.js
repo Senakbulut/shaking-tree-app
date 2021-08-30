@@ -22,13 +22,13 @@ function Apple(props) {
            <Tree fall ={fallApples}/>
            
             <div className="containerApple">
-                    <img src="../../../public/images/apple.svg" alt="" className={`appleImg1 `}/>
-                    <img src="../../../public/images/apple.svg" alt="" className={`appleImg2 `} />
-                    <img src="../../../public/images/apple.svg" alt="" className={`appleImg3 ${fallApple1 ? 'fallAppl1' : null }`} />
-                    <img src="../../../public/images/apple.svg" alt="" className={`appleImg4 ${fallApple2 ? 'fallAppl2' : null }`} />
-                    <img src="../../../public/images/apple.svg" alt="" className={`appleImg5 `} />
-                    <img src="../../../public/images/apple.svg" alt="" className={`appleImg6 `} />
-                    <img src="../../../public/images/apple.svg" alt="" className={`appleImg7 ${fallApple3 ? 'fallAppl3' : null }`} />
+                    <img src="../../../public/images/apple.png" alt="" className={`appleImg1 `}/>
+                    <img src="../../../public/images/apple.png" alt="" className={`appleImg2 `} />
+                    <img src="../../../public/images/apple.png" alt="" className={`appleImg3 ${fallApple1 ? 'fallAppl1' : null }`} />
+                    <img src="../../../public/images/apple.png" alt="" className={`appleImg4 ${fallApple2 ? 'fallAppl2' : null }`} />
+                    <img src="../../../public/images/apple.png" alt="" className={`appleImg5 `} />
+                    <img src="../../../public/images/apple.png" alt="" className={`appleImg6 `} />
+                    <img src="../../../public/images/apple.png" alt="" className={`appleImg7 ${fallApple3 ? 'fallAppl3' : null }`} />
             </div>
        
         </div>
