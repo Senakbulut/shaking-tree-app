@@ -11,7 +11,7 @@ function Basket() {
     }
     return (
         <div>
-        /*Function is sent to Apple component so it can be used with props*/
+        {/*Function is sent to Apple component so it can be used with props*/}
             <Apple visible={visibleApple}/> 
             <div className="containerBasket">
                 <img src="../../../public/images/basket.png" alt="" className="basketImg" />
