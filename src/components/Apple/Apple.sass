@@ -1,19 +1,21 @@
-.AppleCommon /*common properties*/
+//common properties
+.AppleCommon 
     width: 3%
     position: absolute
-
-$applePositionsH: 1,2 /*'each list' for apples above*/
-$applePositionsV: 4,5,6,7 /*'each list' for the remaining apples*/
+//'each list' for apples above
+$applePositionsH: 1,2 
+//'each list' for the remaining apples
+$applePositionsV: 4,5,6,7 
 @each $positionH in $applePositionsH
     .appleImg#{$positionH}
-        @extend .AppleCommon
-        left: 10 + (8*$positionH) + % /* Each can be given different positions with 'each'*/
+        @extend .AppleCommon 
+        left: 10 + (8*$positionH) + % // Each can be given different positions with 'each'
         top: 15+ (3*$positionH) + %
 
 @each $positionV in $applePositionsV
 
     .appleImg#{$positionV}
-        @extend .AppleCommon/*Common properties with extend are used without repetition*/
+        @extend .AppleCommon//Common properties with extend are used without repetition
         left: (2*$positionV) + %
         margin-left:(3*$positionV) + %
         top:  35%
@@ -31,7 +33,8 @@ $applePositionsV: 4,5,6,7 /*'each list' for the remaining apples*/
 
 $falling: 1,2,3
 
-@each $fall in $falling /*apple falling animation*/
+//apple falling animation
+@each $fall in $falling 
     .fallAppl#{$fall}
         animation: fall $fall + s linear
         animation-fill-mode: forwards
